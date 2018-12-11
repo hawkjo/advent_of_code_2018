@@ -3,7 +3,6 @@ import numpy as np
 
 
 input_val = 1955
-#input_val = 42
 M = np.zeros((301, 301))
 
 for y in range(1, 301):
