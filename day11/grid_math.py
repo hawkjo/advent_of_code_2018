@@ -38,7 +38,7 @@ for y in range(1, 301):
         sys.stdout.flush()
     for x in range(1, 301):
         for size in range(1, 301):
-            if size + x > 300 or size + y > 300:
+            if size + x > 301 or size + y > 301:
                 continue
             gridsum = M[y:y+size, x:x+size].sum()
             if gridsum > max_gridsum:
