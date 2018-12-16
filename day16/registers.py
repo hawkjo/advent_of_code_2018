@@ -72,8 +72,7 @@ inst = [9, 2, 1, 2]
 areg = [3, 2, 2, 1]
 print 'Example possibilities:'
 for f in funcs:
-    b = deepcopy(breg)
-    if f(b, *inst[1:]) == areg:
+    if f(deepcopy(breg), *inst[1:]) == areg:
         print f.__name__
 
 tests = []
